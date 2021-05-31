@@ -1,0 +1,17 @@
+{
+  "name": "cscms-lottery",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/thetkpark/cscms-lottery.git",
+  "author": "Sethanant Pipatpakorn <sethanant.p@icloud.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "truffle test",
+    "migrate-rinkeby": "truffle migrate --network rinkeby"
+  },
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.4.0",
+    "dotenv": "^10.0.0",
+    "truffle": "^5.3.8"
+  }
+}
