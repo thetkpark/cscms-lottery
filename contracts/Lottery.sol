@@ -1,13 +1,12 @@
 pragma solidity ^0.8.4;
 
-
 contract Lottery {
     address public manager;
     address public prevWinner;
     uint public prevPrize;
     address[] public players;
     uint public endTime;
-    uint duration;
+    uint public duration;
     
     constructor(uint sec_duration) {
         manager = msg.sender;
@@ -20,7 +19,7 @@ contract Lottery {
         players.push(msg.sender);
     }
     
-    function getNumberOfPlayers() external view returns (address[] memory) {
+    function getPlayers() external view returns (address[] memory) {
         return players;
     }
     
