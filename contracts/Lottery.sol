@@ -9,9 +9,9 @@ contract Lottery {
     uint public endTime;
     uint duration;
     
-    constructor(uint hours_duration) {
+    constructor(uint sec_duration) {
         manager = msg.sender;
-        duration = hours_duration * 1 hours;
+        duration = sec_duration;
         endTime = block.timestamp + duration;
     }
     
